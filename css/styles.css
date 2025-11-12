@@ -1,0 +1,35 @@
+
+/* Taniti Prototype - Grayscale, mobile-first */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; background: #fff; }
+a { color: #111; text-decoration: none; }
+header { border-bottom: 1px solid #ddd; background: #f9fafb; position: sticky; top: 0; z-index: 10; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.brand { font-weight: 700; letter-spacing: .5px; font-size: 20px; }
+nav { display: flex; flex-wrap: wrap; gap: 10px; padding: 8px 0 14px; }
+nav a { padding: 8px 10px; border-radius: 6px; border: 1px solid #e5e7eb; background: #fff; font-size: 14px; }
+nav a.active { background: #111; color: #fff; border-color: #111; }
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center; padding: 28px 0; }
+.hero img { width: 100%; height: auto; border-radius: 8px; border: 1px solid #e5e7eb; }
+.hero h1 { margin: 0 0 10px; font-size: 32px; }
+.hero p { margin: 0 0 16px; color: #444; }
+.cta { display: inline-block; padding: 10px 14px; border-radius: 6px; background: #111; color: #fff; }
+.grid { display: grid; gap: 16px; }
+.grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px; background: #fff; }
+.card img { width: 100%; height: auto; border-radius: 6px; border: 1px solid #e5e7eb; margin-bottom: 10px; }
+h2 { margin-top: 30px; font-size: 22px; }
+section { padding: 18px 0; }
+footer { border-top: 1px solid #ddd; background: #f9fafb; margin-top: 40px; }
+footer .muted { color: #666; font-size: 14px; }
+.breadcrumbs { font-size: 13px; color: #666; margin: 8px 0 0; }
+.breadcrumbs a { color: #666; text-decoration: underline; }
+.notice { background: #f3f4f6; border: 1px dashed #d1d5db; padding: 10px; border-radius: 6px; color: #374151; }
+.list { padding-left: 18px; }
+.list li { margin-bottom: 6px; }
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  nav { gap: 6px; }
+}
